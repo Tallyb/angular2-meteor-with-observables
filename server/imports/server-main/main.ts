@@ -1,5 +1,5 @@
-import { DemoCollection } from '../../../both/collections/demo-collection';
-import { DemoDataObject } from '../../../both/models/demo-data-object';
+import {Product} from "../../../both/models/product-object";
+import {ProductsCollection} from "../../../both/collections/products-collection";
 
 export class Main {
   constructor() {
@@ -7,23 +7,24 @@ export class Main {
 
   start():void {
     this.initFakeData();
+
+    Meteor.publish("products", () => {
+      return ProductsCollection.getMongoCollection().find({});
+    });
   }
 
   initFakeData():void {
-    if (DemoCollection.find({}).count() === 0) {
-      DemoCollection.insert(<DemoDataObject>{
-        name: 'Dotan',
-        age: 25
+    if (ProductsCollection.getMongoCollection().find({}).count() === 0) {
+      ProductsCollection.insert(<Product>{
+        name: 'Dotan'
       });
 
-      DemoCollection.insert(<DemoDataObject>{
-        name: 'Liran',
-        age: 26
+      ProductsCollection.insert(<Product>{
+        name: 'Liran'
       });
 
-      DemoCollection.insert(<DemoDataObject>{
-        name: 'Uri',
-        age: 30
+      ProductsCollection.insert(<Product>{
+        name: 'Uri'
       });
     }
   }

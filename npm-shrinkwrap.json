@@ -16,6 +16,11 @@
       "from": "@angular/core@2.0.0-rc.4",
       "resolved": "https://registry.npmjs.org/@angular/core/-/core-2.0.0-rc.4.tgz"
     },
+    "@angular/forms": {
+      "version": "0.2.0",
+      "from": "@angular/forms@0.2.0",
+      "resolved": "https://registry.npmjs.org/@angular/forms/-/forms-0.2.0.tgz"
+    },
     "@angular/platform-browser": {
       "version": "2.0.0-rc.4",
       "from": "@angular/platform-browser@2.0.0-rc.4",
@@ -31,10 +36,25 @@
       "from": "@angular/router@3.0.0-alpha.8",
       "resolved": "https://registry.npmjs.org/@angular/router/-/router-3.0.0-alpha.8.tgz"
     },
+    "@ngrx/core": {
+      "version": "1.0.1",
+      "from": "@ngrx/core@1.0.1",
+      "resolved": "https://registry.npmjs.org/@ngrx/core/-/core-1.0.1.tgz"
+    },
+    "@ngrx/effects": {
+      "version": "1.0.1",
+      "from": "@ngrx/effects@1.0.1",
+      "resolved": "https://registry.npmjs.org/@ngrx/effects/-/effects-1.0.1.tgz"
+    },
+    "@ngrx/store": {
+      "version": "2.0.1",
+      "from": "@ngrx/store@2.0.1",
+      "resolved": "https://registry.npmjs.org/@ngrx/store/-/store-2.0.1.tgz"
+    },
     "angular2-meteor": {
       "version": "0.6.2",
-      "from": "angular2-meteor@0.6.2",
-      "resolved": "https://registry.npmjs.org/angular2-meteor/-/angular2-meteor-0.6.2.tgz"
+      "from": "urigo/angular2-meteor#546f6378c48566ad8f072b8026f84bf41c79e5f5",
+      "resolved": "git://github.com/urigo/angular2-meteor.git#546f6378c48566ad8f072b8026f84bf41c79e5f5"
     },
     "angular2-meteor-auto-bootstrap": {
       "version": "0.6.0",
@@ -72,6 +92,11 @@
       "version": "0.35.1",
       "from": "es6-shim@0.35.1",
       "resolved": "https://registry.npmjs.org/es6-shim/-/es6-shim-0.35.1.tgz"
+    },
+    "lodash": {
+      "version": "4.14.0",
+      "from": "lodash@>=4.14.0 <5.0.0",
+      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.14.0.tgz"
     },
     "meteor-node-stubs": {
       "version": "0.2.3",
