@@ -13,6 +13,18 @@ export const productsReducer : ActionReducer<ProductsState> = (state : ProductsS
         return Object.assign({}, state, { products: action.payload });
       }
 
+      case ProductsActions.ADD_PRODUCT_SUCCESS: {
+        console.log("Created new item:", action.payload);
+
+        return state;
+      }
+
+      case ProductsActions.ADD_PRODUCT_FAIL: {
+        console.log("Error creating new item:", action.payload);
+
+        return state;
+      }
+
       default:
         return state;
     }
