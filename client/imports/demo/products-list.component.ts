@@ -21,7 +21,6 @@ export class ProductsListComponent extends MeteorComponent implements OnInit, On
     super();
 
     this.products = this._store.select("products");
-    console.log(this.products);
   }
 
   ngOnInit() {
@@ -34,7 +33,7 @@ export class ProductsListComponent extends MeteorComponent implements OnInit, On
 
   add() {
     let product = <Product>{
-      name: "Test new"
+      name: "Test new " + Date.now()
     };
 
     this._store.dispatch({

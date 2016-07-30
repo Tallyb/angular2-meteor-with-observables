@@ -11,6 +11,12 @@ export class Main {
     Meteor.publish("products", () => {
       return ProductsCollection.getMongoCollection().find({});
     });
+
+    Meteor.methods({
+      addProduct: (product) => {
+        return ProductsCollection.insert(product);
+      }
+    })
   }
 
   initFakeData():void {

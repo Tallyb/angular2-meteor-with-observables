@@ -9,7 +9,7 @@ export interface ProductsState {
 
 export const productsReducer : ActionReducer<ProductsState> = (state : ProductsState, action : Action) => {
     switch (action.type) {
-      case ProductsActions.LOAD_PRODUCTS_FROM_COLLECTION: {
+      case ProductsActions.PRODUCTS_COLLECTION_UPDATED: {
         return Object.assign({}, state, { products: action.payload });
       }
 
